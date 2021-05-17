@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  vue:
+    build: ./vue-spa/Dockerfile.prod
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  django:
+    build: ./django/Dockerfile.prod
+    volumes:
+      - ./django:/app
+    environment:
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      - db
+  nginx:
+    build: ./nginx/Dockerfile.prod
+    ports:
+      - 80:80
+    depends_on:
+      - vue
+      - django
+
+volumes:
+  postgres_data:
