@@ -2,5 +2,7 @@
 # django-vue-docker
 Sample implementation of a Django+Vue.js+Docker stack
 
-| :exclamation:  This is for educational purposes and is not yet production-ready |
-|---------------------------------------------------------------------------------|
+## Rationale for this repository
+:exclamation:  This is for educational purposes, there will be a lot of mistakes in this
+repository as I learn how to use Git, Vue.js, Django, Docker, GitHub actions, along with
+integrating the best practice for each of these into my skillset.
