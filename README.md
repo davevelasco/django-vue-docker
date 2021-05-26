@@ -1,8 +1,10 @@
+# django-vue-docker
 ![](https://github.com/davevelasco/django-vue-docker/actions/workflows/python-app.yml/badge.svg)
 ![](https://github.com/davevelasco/django-vue-docker/actions/workflows/node.js.yml/badge.svg)
 ![](https://img.shields.io/github/license/davevelasco/django-vue-docker.svg)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-# django-vue-docker
+
 Sample implementation of a Django+Vue.js+Docker stack
 
 ## Rationale for this repository
